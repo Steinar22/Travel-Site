@@ -4,6 +4,7 @@ const path = require('path')
 const testUtils = require('react-dom/test-utils')
 
 const postCSSPlugins = [
+  require('postcss-import'),
   require('postcss-simple-vars'),
   require('postcss-nested'),
   require('autoprefixer')
@@ -21,7 +22,7 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        use: ['style-loader','css-loader', {loader: 'postcss-loader', options: {postcssOptions: {plugins: postCSSPlugins}}}]
+        use: ["style-loader", { loader: "css-loader", options: { url: false } }, { loader: "postcss-loader", options: { postcssOptions: { plugins: postCSSPlugins } } }]
         
       }
     ]
