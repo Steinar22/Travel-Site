@@ -27,7 +27,7 @@
     "postcss-hexrgba": "^2.1.0",
     "postcss-import": "^15.1.0",
     "postcss-loader": "^7.3.3",
-    "postcss-mixins": "^9.0.4",
+    "postcss-mixins": "^6.2.3",
     "postcss-nested": "^6.0.1",
     "postcss-simple-vars": "^7.0.1",
     "style-loader": "^3.3.3",

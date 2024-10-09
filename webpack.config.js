@@ -5,6 +5,7 @@ const testUtils = require('react-dom/test-utils')
 
 const postCSSPlugins = [
   require('postcss-import'),
+  require('postcss-mixins'),
   require('postcss-simple-vars'),
   require('postcss-nested'),
   require('autoprefixer')
